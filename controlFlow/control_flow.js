@@ -44,3 +44,4 @@ switch (userType) {
 }
 
 console.log("User Category:", userCategory);
+console.log("Hasnain")
