@@ -15,4 +15,5 @@ function checkCountValue(){
         alert("cong you reach 10 follower")
     }
 }
+// task to add reset button
 
