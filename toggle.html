@@ -14,21 +14,29 @@
     </div>
     <button id="mybtn">Toggle</button>
 
+    <p id="myPara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, doloremque. <br> the style of
+        this para is given to js</p>
+
     <script>
         const div = document.getElementById("mydiv")
         const button = document.getElementById("mybtn")
-        function toggleClassAndColor(){
+        function toggleClassAndColor() {
             div.classList.toggle("active")
             div.classList.toggle("inactive")
 
-            if(div.classList.contains("active")){
-                div.style.backgroundColor="green"
+            if (div.classList.contains("active")) {
+                div.style.backgroundColor = "green"
             }
-            else{
-                div.style.backgroundColor="yellow"
+            else {
+                div.style.backgroundColor = "yellow"
             }
         }
-        button.addEventListener("click",toggleClassAndColor)
+        button.addEventListener("click", toggleClassAndColor)
+
+        const text = document.getElementById("myPara");
+        text.style.cssText = "color : green; font-weight : bold"
+        text.style.setProperty("color", "purple", "important")
+        text.style.color = "red"
     </script>
 
 </body>
