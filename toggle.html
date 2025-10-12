@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggeling html through JS</title>
+</head>
+
+<body>
+
+    <div id="mydiv" class="active">
+        this is my div
+    </div>
+    <button id="mybtn">Toggle</button>
+
+    <script>
+        const div = document.getElementById("mydiv")
+        const button = document.getElementById("mybtn")
+        function toggleClassAndColor(){
+            div.classList.toggle("active")
+            div.classList.toggle("inactive")
+
+            if(div.classList.contains("active")){
+                div.style.backgroundColor="green"
+            }
+            else{
+                div.style.backgroundColor="yellow"
+            }
+        }
+        button.addEventListener("click",toggleClassAndColor)
+    </script>
+
+</body>
+
+</html>
