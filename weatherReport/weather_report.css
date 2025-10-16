@@ -1,0 +1,71 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+form {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  display: flex;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+  color: #fff;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  width: 200px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#weatherInfo {
+  margin-top: 25px;
+  background: rgba(255,255,255,0.8);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}

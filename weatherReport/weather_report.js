@@ -1,7 +1,7 @@
 function showweatherDetails(event) {
   event.preventDefault();
   const city = document.getElementById("city").value;
-  const apiKey = "d266d7dbbb460a92e78e4a4afc4d688e"; // Replace 'YOUR_API_KEY' with your actual API key
+  const apiKey = "67b0d28d8a0f2834a532416aac81fc8c"; // Replace 'YOUR_API_KEY' with your actual API key
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   fetch(apiUrl)
     .then(response => response.json())
@@ -11,7 +11,10 @@ function showweatherDetails(event) {
                                     <p>Temperature: ${data.main.temp} &#8451;</p>
                                     <p>Weather: ${data.weather[0].description}</p>`;
     });
+
 }
+
+
 
  document.getElementById('weatherForm').addEventListener('submit',showweatherDetails );
 
